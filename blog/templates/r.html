@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--{%include "blog/list.html"%}-->
+<h1>hello </h1>
+{%for Post in object_list %}
+<a href="{% url 'detail_post_page' slug=Post.slug %}">
+{{Post.title}}</a><br>
+{{Post.body}}<br>
+  {%endfor%}
+</body>
+</html>

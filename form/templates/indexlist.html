@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>hhhhhhhhhhtttttttttttttttttttyyyyyyyyyyyy</h1>
+<a href="{%url "newpost"%}">newpost</a><br>
+{%for a in a%}
+{{a.id}}
+{{a.name}}
+<a href="{%url "update" id=a.id%}">update</a>
+<a href="{%url "delete" id=a.id%}">delete</a><br>
+
+{%endfor%}
+</body>
+</html>
